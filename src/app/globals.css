@@ -22,3 +22,58 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+p,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* Other */
+
+/* Estilização para o scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da scrollbar */
+  height: 8px; /* Altura para scrollbar horizontal */
+}
+
+/* Estilizando a trilha (fundo da barra de rolagem) */
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Cor de fundo da trilha */
+  border-radius: 10px;
+}
+
+/* Estilizando o polegar da barra de rolagem (parte que o usuário interage) */
+::-webkit-scrollbar-thumb {
+  background: #4a90e2; /* Cor do polegar */
+  border-radius: 10px;
+  border: 2px solid #2d2d2d; /* Adiciona uma borda ao redor do polegar */
+  transition: background 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Estilizando o polegar da barra de rolagem quando o usuário passa o mouse sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background: #357ab7; /* Cor mais escura ao passar o mouse */
+}
+
+/* Para scrollbar horizontal (se necessário) */
+::-webkit-scrollbar-thumb:horizontal {
+  background: #4a90e2;
+}
+
+/* Estilizando o canto da barra de rolagem */
+::-webkit-scrollbar-corner {
+  background: #2d2d2d;
+}
+
+/* Animations */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

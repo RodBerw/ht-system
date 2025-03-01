@@ -1,6 +1,6 @@
 "use client";
 
-import { GlobalContext } from "@/app/page";
+import { GlobalContext } from "@/context/GlobalContext";
 import { Process } from "@/types/types";
 import { Card } from "@heroui/card";
 import { useContext } from "react";

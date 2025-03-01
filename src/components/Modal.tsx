@@ -1,4 +1,4 @@
-import { GlobalContext } from "@/app/page";
+import { GlobalContext } from "@/context/GlobalContext";
 import { Process } from "@/types/types";
 import { useContext } from "react";
 

@@ -6,13 +6,7 @@ import { fakeCustomers } from "../mocks/data";
 import CustomerCard from "@/components/CustomerCard";
 import Modal from "@/components/Modal";
 import Infos from "@/components/Infos";
-
-interface GlobalContextType {
-  setIsModalOpen: (isOpen: boolean) => void;
-  setModalProcess: (process: Process) => void;
-}
-
-export const GlobalContext = createContext<GlobalContextType | null>(null);
+import { GlobalContext } from "@/context/GlobalContext";
 
 export default function Home() {
   const [customers, setCustomers] = useState<Customer[]>([]);
